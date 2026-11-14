@@ -1,111 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sandesh Pande | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sandesh Pande | QA Automation & AI Test Engineer</title>
+<meta name="description" content="Sandesh Pande - QA Automation Engineer building AI-driven test automation with Playwright, Pytest and Selenium.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <header class="navbar">
-        <h1 class="logo">SANDESH PANDE</h1>
-        <nav>
-            <a href="#about">About Me</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#certifications">Certifications</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+<canvas id="net"></canvas>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h2 class="hero-title">Being Engineer</h2>
-            <p class="hero-desc">Let's Connect & Create Something Amazing!</p>
-            <a href="#projects" class="cta-btn">Explore My Work</a>
-        </div>
-    </section>
-    
+<header class="nav">
+  <a href="#home" class="logo" aria-label="Home">SP</a>
+  <nav id="menu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#courses">Courses</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="socials">
+    <a href="https://github.com/shipWithSandesh" target="_blank" rel="noopener" aria-label="GitHub">
+      <svg viewBox="0 0 24 24"><path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.1c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5z"/></svg>
+    </a>
+    <a href="https://www.linkedin.com/in/sandesh-pande-7253b0237/" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <svg viewBox="0 0 24 24"><path d="M20.4 20.5h-3.6v-5.6c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9v5.7H9.3V9h3.4v1.6c.5-.9 1.6-1.8 3.4-1.8 3.6 0 4.3 2.4 4.3 5.5v6.2zM5.3 7.4a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2zM7.1 20.5H3.5V9h3.6v11.5zM22.2 0H1.8C.8 0 0 .8 0 1.7v20.6c0 .9.8 1.7 1.8 1.7h20.4c1 0 1.8-.8 1.8-1.7V1.7C24 .8 23.2 0 22.2 0z"/></svg>
+    </a>
+    <a href="mailto:sandeshpande25@gmail.com" aria-label="Email">
+      <svg viewBox="0 0 24 24"><path d="M2 4h20c.6 0 1 .4 1 1v14c0 .6-.4 1-1 1H2c-.6 0-1-.4-1-1V5c0-.6.4-1 1-1zm10 8.2L3.4 6v12h17.2V6L12 12.2zM4.6 6 12 11.2 19.4 6H4.6z"/></svg>
+    </a>
+  </div>
+  <button class="burger" id="burger" aria-label="Menu">&#9776;</button>
+</header>
 
-    <!-- About Me -->
-    <section id="about" class="section">
-        <h2 class="section-title">My Work</h2>
-        <div class="about-content">
-            <p class="about-role">QA Analyst with expertise in Java, Python, and Selenium, contributing to web application and visual UI/UX automation testing.</p>
-            <p class="about-sector"><strong>Sector:</strong> Gen AI, Health Care, Automation Enterprise</p>
-            <p class="about-clients"><strong>Clients:</strong> Intel, Entrust, IQVIA</p>
-            <p class="about-flavor">"Physics has always been my first love, but tech makes my heart race."</p>
-        </div>
-    </section>
+<main>
+<section id="home" class="hero">
+  <h1>Hi, I'm a <span id="typed"></span><span class="cursor">|</span></h1>
+  <p class="tag">QA Automation Engineer who makes AI write, run and fix the tests. Playwright, Pytest and Selenium frameworks that ship releases without the drama.</p>
+  <div class="cta">
+    <a href="#projects" class="btn primary">View Projects</a>
+    <a href="resume.pdf" class="btn ghost" download>Download Resume</a>
+  </div>
+  <a href="#about" class="scroll"><span>Scroll Down</span><i></i></a>
+</section>
 
-    <!-- Skills -->
-    <section id="skills" class="section">
-        <h2>Skills & Technologies</h2>
-        <ul class="skills-grid">
-            <li>🧪 Selenium (Java, TestNG, JUnit)</li>
-            <li>💻 IDE: IntelliJ, Eclipse, PyCharm, VSCode</li>
-            <li>🔧 Manual & Automation Testing</li>
-            <li>📈 Test Management (JIRA, ALM)</li>
-            <li>🔍 Python, Pytest</li>
-        </ul>
-    </section>
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <div class="card about">
+    <div class="avatar">SP</div>
+    <div>
+      <p>I'm <b>Sandesh Pande</b>, a Software Engineer at <b>Wipro</b> (Aug 2024 – present), automating enterprise healthcare platforms end to end: Salesforce, SWB and customer buying workflows.</p>
+      <p>I build Pytest and Playwright (TypeScript) frameworks wired into GitLab CI/CD and HP ALM, and I lean hard on AI: plain-English tests that turn into Page Object Model scripts through Playwright MCP, and visual checks that catch UI breaks before users do.</p>
+      <div class="stats">
+        <div><b>2+</b><span>years in QA automation</span></div>
+        <div><b>80%</b><span>less manual visual testing</span></div>
+        <div><b>2×</b><span>Client Recognition Awards</span></div>
+      </div>
+      <p class="edu">🎓 B.Tech, Electronics &amp; Communication, Central University of Karnataka (2020–2024), CGPA 8.5 · 📍 Bengaluru, India</p>
+    </div>
+  </div>
+</section>
 
-    <!-- Projects -->
-    <section id="projects" class="section">
-        <h2>Projects</h2>
+<section id="courses" class="section">
+  <h2>Courses &amp; Certifications</h2>
+  <div class="grid four">
+    <div class="card course"><span>2026</span><h3>Complete Python Developer</h3><p>Udemy</p></div>
+    <div class="card course"><span>2026</span><h3>Google IT Automation</h3><p>Coursera</p></div>
+    <div class="card course"><span>2025</span><h3>Java Test Automation</h3><p>Udemy</p></div>
+    <div class="card course"><span>2024</span><h3>PowerShell Scripting</h3><p>Udemy</p></div>
+  </div>
+</section>
 
-        <div class="project-card">
-            <h3>visual_UI/UX_Testing</h3>
-            <p>Designed a UI/UX automation testing framework using imagehash, PIL, Python, Pytest, Playwright with proper logging and reports generated as per industry norms.</p>
-        </div>
+<section id="skills" class="section">
+  <h2>Skills</h2>
+  <div class="grid three">
+    <div class="card"><h3>Automation</h3><div class="chips"><i>Playwright</i><i>Pytest</i><i>Selenium</i><i>TestNG</i><i>Cucumber</i><i>Visual Testing</i><i>Data-Driven</i></div></div>
+    <div class="card"><h3>AI in Testing</h3><div class="chips"><i>Playwright MCP</i><i>AI Test Generation</i><i>GitHub Copilot</i><i>AI Agents</i><i>Prompt Engineering</i></div></div>
+    <div class="card"><h3>Languages</h3><div class="chips"><i>Python</i><i>TypeScript</i><i>Java</i><i>SQL</i><i>PowerShell</i></div></div>
+    <div class="card"><h3>API &amp; CI/CD</h3><div class="chips"><i>Postman</i><i>REST APIs</i><i>GitLab CI/CD</i><i>GitHub Actions</i><i>Git</i></div></div>
+    <div class="card"><h3>Tools</h3><div class="chips"><i>Jira</i><i>HP ALM</i><i>VS Code</i><i>IntelliJ</i><i>PyCharm</i></div></div>
+    <div class="card"><h3>Ways of Working</h3><div class="chips"><i>Agile / Scrum</i><i>Regression</i><i>Integration</i><i>E2E Testing</i></div></div>
+  </div>
+</section>
 
-        <div class="project-card">
-            <h3>ai_augmented_automation</h3>
-            <p>Implemented a full fledged AI driven automation framework with only testData need to be used as input it ALM requirement sheet.</p>
-        </div>
+<section id="projects" class="section">
+  <h2>Projects</h2>
+  <div class="grid three">
+    <a class="card proj" href="https://github.com/shipWithSandesh/cineseat-movie-booking" target="_blank" rel="noopener">
+      <span class="emoji">🎬</span><h3>CineSeat</h3><p>Movie seat-booking app with API, unit and Playwright UI tests running in CI.</p><div class="chips"><i>Python</i><i>Pytest</i><i>Playwright</i></div></a>
+    <a class="card proj" href="https://github.com/shipWithSandesh/routewise-maps" target="_blank" rel="noopener">
+      <span class="emoji">🗺️</span><h3>RouteWise</h3><p>Maps-style route planner with tested routing logic and end-to-end UI checks.</p><div class="chips"><i>Python</i><i>Pytest</i><i>Playwright</i></div></a>
+    <a class="card proj" href="https://github.com/shipWithSandesh/zoomride-bike-taxi" target="_blank" rel="noopener">
+      <span class="emoji">🏍️</span><h3>ZoomRide</h3><p>Bike-taxi booking app covering fares, rides and UI flows with automated tests.</p><div class="chips"><i>Python</i><i>Pytest</i><i>CI</i></div></a>
+    <a class="card proj" href="https://github.com/shipWithSandesh/api-test-automation-pytest" target="_blank" rel="noopener">
+      <span class="emoji">🔌</span><h3>API Test Automation</h3><p>Pytest framework for REST APIs: clients, models, data factories, negative tests.</p><div class="chips"><i>Pytest</i><i>Requests</i><i>GitHub Actions</i></div></a>
+    <div class="card proj">
+      <span class="emoji">🤖</span><h3>AI Playwright Generator</h3><p>Turns plain-English test definitions into production-ready POM scripts via Playwright MCP. (Work project)</p><div class="chips"><i>Playwright</i><i>MCP</i><i>TypeScript</i></div></div>
+    <div class="card proj">
+      <span class="emoji">👁️</span><h3>UI/UX Inspector</h3><p>Pixel-level visual validation with image hashing; cut manual visual testing by 80%. (Work project)</p><div class="chips"><i>Playwright</i><i>Python</i><i>AI</i></div></div>
+  </div>
+</section>
 
+<section id="contact" class="section">
+  <h2>Contact</h2>
+  <div class="card contact">
+    <p>Hiring for test automation or AI quality engineering? Let's talk.</p>
+    <div class="cta">
+      <a class="btn primary" href="mailto:sandeshpande25@gmail.com">Email Me</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/sandesh-pande-7253b0237/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn ghost" href="https://github.com/shipWithSandesh" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</section>
+</main>
 
-        <div class="project-card">
-            <h3>Quadcopter Control & Surveillance</h3>
-            <p>Designed and implemented a quadcopter for real-time surveillance using Ardupilot APM2.8 and ESP32 CAM. Enabled remote navigation via mission planner software for advanced tracking and monitoring.</p>
-        </div>
-
-        <div class="project-card">
-            <h3>Wi-Fi Controlled Multifunctional Robot</h3>
-            <p>Built a Wi-Fi-enabled multifunctional robot integrating a 4DOF robotic arm and a rover. Utilized an ESP32 Wroom module for automation, including a vacuum cleaning feature and record-and-play functionality.</p>
-        </div>
-
-        
-        
-    </section>
-
-    <!-- Certifications -->
-    <section id="certifications" class="section">
-        <h2>Certifications</h2>
-        <ul class="cert-list">
-            <li>✅ PowerShell Scripting (Udemy)</li>
-            <li>✅ Selenium Automation Testing (Udemy)</li>
-            <li>✅ Appium Mobile Testing (Udemy)</li>
-            <li>✅ NPTEL Certification on Machine Learning & Algebra</li>
-        </ul>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section">
-        <h2>Contact Me</h2>
-        <div class="contact-info">
-            <p>📧 Email: <a href="mailto:sandeshpande25@gmail.com">sandeshpande25@gmail.com</a></p>
-            <p>📞 Phone: +91 7026000019</p>
-            <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/sandesh-pande-7253b0237">linkedin.com/in/sandesh-pande-7253b0237</a></p>
-            <p>💻 GitHub: <a href="https://github.com/shipWithSandesh">github.com/shipWithSandesh</a></p>
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2025 Sandesh Pande. "Dhoni's calmness, Salman's charisma – I bring both to my code."</p>
-    </footer>
+<footer>© <span id="yr"></span> Sandesh Pande · Built and tested with ☕</footer>
+<script src="script.js"></script>
 </body>
 </html>
